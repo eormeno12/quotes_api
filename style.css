@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    padding: 24px;
+  }
+  
+  .search-bar {
+    background-color: #f4f4f4;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 600px;
+  }
+  
+  .search-bar input {
+    border: none;
+    background-color: transparent;
+    flex: 1;
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+  }
+
+  .search-bar form{
+    width: 100%;
+    display: flex;
+  }
+  
+  .search-bar button {
+    background-color: #fc6c85;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .options-container::-webkit-scrollbar{
+    display: none;
+  }
+
+  .options-container {
+    max-width: 600px;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+  }
+  
+  .option {
+    display: inline-block;
+    background-color: white;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border: none;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.75;
+  }
+  
+  .option:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fc6c85;
+    color: #fff;
+    opacity: 1;
+  }
+  
+  main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 0 80px;
+  }
+
+  .card {
+    max-width: 400px;
+    height: fit-content;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    margin: 0 auto;
+    margin-top: 32px;
+  }
+  
+  .card-header h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+
+  .card-footer p {
+    color: #fc6c85;
+    font-size: 18px;
+    font-style: italic;
+    text-align: right;
+  }

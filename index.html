@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes API</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" defer src="./main.js"></script>
+    <script src="./setCategories.js"></script>
+</head>
+<body>
+    <header>
+        <div class="search-bar">
+          <form>
+            <input type="text" id="searchInput" placeholder="Buscar categoría" />
+        </form>
+        <button id="searchButton">Buscar</button>
+        </div>
+
+        <div class="options-container">
+            <script>
+            function changeSearchValue(bt){
+                document.getElementById('searchInput').value = bt.innerHTML;
+            }
+            </script>
+            <div class="category-wrapper" id="categories"></div>
+        </div>
+      </header>
+      <main id="content">
+      </main>
+</body>
+</html>
