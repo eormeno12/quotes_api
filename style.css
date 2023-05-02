@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-appearance: none;
   }
   
   body {
@@ -67,6 +66,7 @@
   .option {
     display: inline-block;
     background-color: white;
+    color: #494949;
     border-radius: 10px;
     margin: 5px;
     padding: 5px 10px;
